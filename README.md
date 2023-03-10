@@ -44,7 +44,7 @@ npm build
 #### Running project
 
 ```bash
-ng serve
+ng serve -o
 npm start
 ```
 
@@ -57,6 +57,14 @@ gzipper compress ./src ./dist
 ```
 
 Then above command will generate `dist` folder, which will be deployed to server
+
+
+#### How i built:
+
+```bash
+ng g c components\page-not-found --skip-tests
+
+```
 
 #### Code scaffolding
 
