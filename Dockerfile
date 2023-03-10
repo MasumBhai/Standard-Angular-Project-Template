@@ -12,7 +12,6 @@ RUN npm install --legacy-peer-deps
 # build the app
 RUN npm run build --prod
 
-
 #stage 2
 FROM nginx:latest
 # for routing
