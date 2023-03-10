@@ -63,9 +63,15 @@ Then above command will generate `dist` folder, which will be deployed to server
 
 ```bash
 ng g c components\page-not-found --skip-tests
-
+ng g c components\faq-section --skip-tests 
+ng g c components\team-section --skip-tests
 ```
 
+#### Dockerize
+```bash
+docker build -t <image_name> -f Dockerfile .
+docker run -p 80:80 <image_name> 
+```
 #### Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
